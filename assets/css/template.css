@@ -1,7 +1,14 @@
 :root{
+  /* General Colors */
   --primary-black-color: #222326;
   --second-black-color: #414346;
   --third-black-color: #2d3034;
+  --fourth-black-color: #393e45;
+  /* Border Colors */
+  --primary-border-black-color: #27292d;
+  --primary-border-gray-color: #36393c;
+  /* Text Color */
+  --primary-text-color: #bebfc1;
 }
 
 body {
@@ -53,4 +60,23 @@ body {
   height: 100px;
   width: auto;
   margin-top: 15px;
+}
+
+.main_nav_border{
+  border-top: 2px solid var(--primary-border-black-color);
+  border-left: 2px solid var(--primary-border-black-color);
+  border-right: 2px solid var(--primary-border-black-color);
+}
+
+.main_nav{
+  height: 45px;
+  border-top: 1px solid var(--primary-border-gray-color);
+}
+
+.main_nav .nav>li>a:focus, .main_nav .nav>li>a:hover {
+  background: var(--fourth-black-color);
+}
+
+.main_nav .navbar-nav>li>a {
+  color: var(--primary-text-color);
 }

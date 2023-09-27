@@ -30,6 +30,21 @@
       <div class="container">
         <div class="container-fluid">
           <div class="logo"><?php if(has_custom_logo()) {the_custom_logo();} ?></div>
+          <div class="main_nav_border">
+            <div class="main_nav">
+              <?php 
+            if(has_nav_menu('primary')) {
+              wp_nav_menu(array(
+                'theme_location' => 'primary',
+                'container' => false,
+                'fallback_cb' => false,
+                'menu_class' => 'nav navbar-nav'
+              ));
+            } 
+            ?>
+            </div>
+            <div class="main_info"></div>
+          </div>
         </div>
       </div>
     </div>
