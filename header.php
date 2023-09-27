@@ -27,7 +27,11 @@
       </nav>
     </div>
     <div class="main_header">
-      <div class="container"></div>
+      <div class="container">
+        <div class="container-fluid">
+          <div class="logo"><?php if(has_custom_logo()) {the_custom_logo();} ?></div>
+        </div>
+      </div>
     </div>
 
   </header>
