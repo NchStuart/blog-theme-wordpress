@@ -1,9 +1,13 @@
-:root{
+:root {
   /* General Colors */
   --primary-black-color: #222326;
   --second-black-color: #414346;
   --third-black-color: #2d3034;
   --fourth-black-color: #393e45;
+  --fifth-black-color: #282b2f;
+  --sixth-black-color: #3e4145;
+  --primary-blue-color: #3382b5;
+  --primary-gray-color: #999;
   /* Border Colors */
   --primary-border-black-color: #27292d;
   --primary-border-gray-color: #36393c;
@@ -23,7 +27,7 @@ body {
   border-bottom: 1px solid var(--second-black-color);
 }
 
-.navbar-default{
+.navbar-default {
   background: none;
   border: 0;
 }
@@ -41,34 +45,34 @@ body {
   color: #ccc;
 }
 
-.main_header{
+.main_header {
   height: 235px;
   background-color: var(--third-black-color);
 }
 
-.container{
+.container {
   margin: 0;
-  padding:0;
+  padding: 0;
   width: 100%;
 }
 
-.logo{
-  height: 130px;
+.logo {
+  height: 133px;
 }
 
-.logo img{
+.logo img {
   height: 100px;
   width: auto;
   margin-top: 15px;
 }
 
-.main_nav_border{
+.main_nav_border {
   border-top: 2px solid var(--primary-border-black-color);
   border-left: 2px solid var(--primary-border-black-color);
   border-right: 2px solid var(--primary-border-black-color);
 }
 
-.main_nav{
+.main_nav {
   height: 45px;
   border-top: 1px solid var(--primary-border-gray-color);
 }
@@ -79,4 +83,77 @@ body {
 
 .main_nav .navbar-nav>li>a {
   color: var(--primary-text-color);
+}
+
+.search_area {
+  float: right;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+.search_input {
+  background-color: var(--fifth-black-color);
+  border: 0p;
+  font-size: 11px;
+  height: 32px;
+  width: 140px;
+  padding: 10px;
+  outline: 0;
+  color: #fff;
+}
+
+.searh_submit {
+  background-color: var(--sixth-black-color);
+  border: 0;
+  height: 32px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.main_info {
+  background-color: #fff;
+  height: 55px;
+}
+
+.main_info .row{
+  margin: 0;
+}
+
+.socialarea{
+  background-color: var(--primary-blue-color);
+  height: 100%;
+  margin-top: -8px;
+  color: #c2dae9;
+}
+
+.randompost{
+  line-height: 55px;
+  color: var(--primary-gray-color);
+}
+
+.randompost strong{
+  text-transform: uppercase;
+}
+
+.randompost a {
+  margin-left: 30px;
+}
+
+.socialtxt {
+  line-height: 55px;
+  float: left;
+}
+
+.socialicons{
+  float: right;
+  height: 20px;
+  margin-top: 17px;
+}
+
+.socialicons img {
+  height: 20px;
+}
+
+.socialicons a {
+  text-decoration: none;
 }
